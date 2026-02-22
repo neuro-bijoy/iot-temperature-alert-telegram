@@ -22,12 +22,12 @@ DallasTemperature sensors(&oneWire);
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
 // ================= WiFi =================
-const char* ssid = "Kk";
-const char* password = "12345678";
+const char* ssid = "wifi device/ hostspot provider name";
+const char* password = "passwoed";
 
 // ================= Telegram =================
-#define BOTtoken ""
-#define CHAT_ID "7540009289"
+#define BOTtoken "bot token"
+#define CHAT_ID "bot id"
 
 WiFiClientSecure client;
 UniversalTelegramBot bot(BOTtoken, client);
